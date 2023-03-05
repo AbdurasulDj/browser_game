@@ -1,34 +1,40 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 10px;
 }
 
-body{
+body {
   font-size: 16px;
   overflow-x: hidden;
 }
 
-#canvas1{
-  background: url("../assets/background.png");
+#canvas1 {
+  background-image: url("../assets/background.png");
+  background-color: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate( -50%, -50%)
+  transform: translate(-50%, -50%)
 }
 
-#overlay{
+#overlay {
   width: 100%;
   height: auto;
   position: absolute;
   bottom: 0%;
   left: 0%;
-  
-  // top: 50%;
-  // left: 50%;
-  // transform: translate( -50%, -50%)
+  pointer-events: none // top: 50%;
+    // left: 50%;
+    // transform: translate( -50%, -50%)
+}
+
+#obstacles {
+  display: none;
 }
